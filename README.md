@@ -1,35 +1,21 @@
-SlotSwapper Frontend (Vite + React)
+# SlotSwapper
 
-1. Install:
-   npm install
+SlotSwapper is a peer-to-peer time-slot scheduling app that lets users swap their busy calendar slots.
 
-2. Run dev server:
-   npm run dev
+## Features
+- JWT authentication
+- Event management (CRUD)
+- Swap requests and responses
+- Real-time status updates
 
-3. Edit API base by setting VITE_API_BASE in environment or edit src/api.js.
+## Tech Stack
+- **Backend:** Node.js, Express, PostgreSQL
+- **Frontend:** React
+- **Auth:** JWT
 
+## Run locally
+```bash
+cd backend
+npm install
+npm run dev
 
-
-
-
-
-SlotSwapper Backend
--------------------
-
-1. Create a Postgres database. Example:
-   createdb slotswapper
-   or use Docker.
-
-2. Copy .env.example to .env and set DATABASE_URL, JWT_SECRET, PORT.
-
-3. Run migrations:
-   npm run migrate
-
-   or:
-   psql $DATABASE_URL -f migrations/init.sql
-
-4. Install dependencies:
-   npm install
-
-5. Start server:
-   npm run dev
